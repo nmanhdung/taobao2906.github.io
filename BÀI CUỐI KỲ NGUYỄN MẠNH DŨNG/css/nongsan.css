@@ -1,0 +1,411 @@
+.waraper {
+    width: 100%;
+    height: 100vh;
+    font-size: 90%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.heading {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5cd79;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.heading_logo {
+    width: 120px;
+    line-height: 90px;
+    padding-right: 20px;
+}
+
+.heading_logo>img {
+    width: 100%;
+}
+
+.nav li>a {
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 0 20px 0px 10px;
+    font-weight: bold;
+    color: rgb(16, 145, 33);
+    border-left: 3px solid rgb(16, 145, 33);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav>li:hover {
+    background-color: rgb(16, 145, 33);
+}
+
+.nav>li:hover a {
+    color: white;
+}
+
+.nav>li {
+    position: relative;
+    list-style: none;
+}
+
+.nav>li .drop {
+    width: 150%;
+    position: absolute;
+    list-style-type: none;
+    display: none;
+    background-color: #f5cd79;
+    color: rgb(16, 145, 33);
+}
+
+.nav>li .drop li a {
+    border: 0;
+    padding: 20px 100px 20px 0;
+}
+
+.nav>li .drop li a:last-child {
+    padding: 20px 40px 20px 0;
+}
+
+.nav>li:hover .drop {
+    display: block;
+}
+
+.nav>li .drop li:hover {
+    background-color: rgb(132, 187, 139);
+    color: white;
+}
+
+.image1 {
+    background-image: url('/BÀI CUỐI KỲ NGUYỄN MẠNH DŨNG/image/image1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50%;
+    width: 100%;
+    position: relative;
+    top: 70px;
+}
+
+.even {
+    width: 100%;
+    background-color: #f5cd79;
+    color: rgb(10, 92, 21);
+    position: relative;
+    top: 70px;
+}
+
+.text {
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.image2 {
+    background-image: url('/BÀI CUỐI KỲ NGUYỄN MẠNH DŨNG/image/nhan-long-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50%;
+    width: 100%;
+    position: relative;
+    top: 70px;
+}
+
+.even2 {
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 60%;
+    background-color: white;
+    color: rgb(10, 92, 21);
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.even2_1 {
+    text-align: center;
+    width: 50%;
+}
+
+.text2 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.picture {
+    width: 50%;
+    padding: 80px 40px;
+}
+
+.picture>img {
+    width: 98%;
+    object-fit: cover;
+}
+
+.picture2 {
+    width: 50%;
+    padding-right: 40px;
+}
+
+.picture2>img {
+    width: 150%;
+    object-fit: cover;
+
+}
+
+.signup {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.abs {
+    text-align: center;
+    width: 48%;
+}
+
+.form_buy {
+    width: 48%;
+    background-color: #f6e58d;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form_buy>form>h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+
+#chudo {
+    color: rgb(199, 31, 22);
+    padding-bottom: 40px;
+    font-weight: 800;
+}
+
+.form_buy input,
+.form_buy select,
+.form_buy textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid rgb(10, 92, 21);
+    border-radius: 8px;
+}
+
+.form_buy textarea {
+    resize: none;
+}
+
+::placeholder,
+select {
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+button {
+    background-color: rgb(10, 92, 21);
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 8px;
+    color: aliceblue;
+    font-weight: 800;
+    margin: 20px 0px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: chartreuse;
+}
+
+.search {
+    line-height: 70px;
+    position: relative;
+}
+
+.search input {
+    padding: 10px 80px 10px 20px;
+    outline: 0;
+    border: 2px solid rgb(10, 92, 21);
+    border-radius: 20px;
+    position: relative;
+    font-size: 1rem;
+}
+
+.search>input::placeholder {
+    font-weight: 400;
+}
+
+.search>button {
+    position: absolute;
+    top: -6px;
+    right: 0.9px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.footer {
+    position: relative;
+    top: 90px;
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(10, 92, 21);
+}
+
+.footer_img {
+    width: 20%;
+}
+
+.footertext {
+    width: 60%;
+}
+
+.footertext h2,
+.thank h2 {
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footertext p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.footertext i {
+    width: 30px;
+}
+
+@media (max-width:739px) {
+    .heading_logo {
+        display: none;
+    }
+
+    .nav li a {
+        font-size: 1rem;
+        border-left: none;
+    }
+
+    .text2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: justify;
+    }
+
+    .even2 {
+        width: 100%;
+    }
+
+    .picture {
+        width: 50%;
+    }
+
+    .picture>img {
+        width: 100%;
+    }
+
+    .signup {
+        width: 95%;
+    }
+
+    .footer {
+        width: 90%;
+    }
+
+    .footer_img {
+        width: 20%;
+    }
+
+    .footer_img>img {
+        width: 100%;
+        margin-top: 50%;
+    }
+
+    .footertext {
+        width: 60%;
+    }
+
+    .footertext>p {
+        font-size: 1rem;
+    }
+}
+
+.modol {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    color: rgb(10, 92, 21);
+    display: none;
+}
+.open{
+    display: flex;
+}
+
+.thank {
+    padding: 50px;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    transform: translateY(-100px);
+    animation:  thankani 0.3s ease forwards;
+}
+@keyframes thankani{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-top-right-radius:8px ;
+    background-color:#f5cd79;
+}
+.close:hover{
+    background-color: rgb(16, 145, 33);
+    color: aliceblue;
+}
